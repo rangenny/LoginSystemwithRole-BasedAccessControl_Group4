@@ -14,7 +14,9 @@ Use the following accounts to test the application's role restrictions:
 
 ## 🚀 Tech Stack
 ***Frontend:** Angular, TypeScript, HTML/CSS 
+
 ***Backend:** Spring Boot, Java, Spring Security 
+
 ***Database:** MySQL 
 
 ## 🛠️ How to Run the Application
