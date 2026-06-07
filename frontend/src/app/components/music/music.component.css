@@ -1,0 +1,148 @@
+.dashboard-container {
+  min-height: 100vh;
+  background: #0b0914;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background: rgba(15, 12, 27, 0.7);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.logo span {
+  color: #a855f7;
+}
+
+.user-meta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.role-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge-admin { background: rgba(168, 85, 247, 0.2); color: #c084fc; border: 1px solid #a855f7; }
+.badge-user { background: rgba(59, 130, 246, 0.2); color: #60a5fa; border: 1px solid #3b82f6; }
+
+.btn-logout {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  padding: 6px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-logout:hover { background: #ff4c4c; border-color: #ff4c4c; }
+
+.dashboard-layout {
+  display: flex;
+  padding: 40px;
+  gap: 40px;
+}
+
+.form-panel {
+  flex: 1;
+  max-width: 350px;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 25px;
+}
+
+.glass-card h3 { margin-top: 0; margin-bottom: 5px; font-size: 1.3rem; }
+.panel-sub { color: #888; font-size: 0.85rem; margin-bottom: 25px; }
+
+.field { margin-bottom: 18px; }
+.field label { display: block; font-size: 0.8rem; color: #aaa; margin-bottom: 6px; text-transform: uppercase; }
+.field input {
+  width: 100%; padding: 12px; background: rgba(0,0,0,0.2); border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px; color: #fff; box-sizing: border-box;
+}
+.field input:focus { outline: none; border-color: #a855f7; }
+
+.btn-submit {
+  width: 100%; padding: 12px; background: #a855f7; border: none; border-radius: 8px;
+  color: white; font-weight: 600; cursor: pointer; margin-top: 10px;
+}
+.btn-submit:disabled { background: #333; color: #686868; cursor: not-allowed; }
+
+.stream-panel { flex: 3; }
+.stream-panel.full-width { flex: 1; }
+.stream-header { margin-bottom: 30px; }
+.stream-header h2 { margin: 0; font-size: 2rem; }
+.stream-header p { color: #888; margin: 5px 0 0 0; }
+
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.music-card {
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: 12px;
+  padding: 16px;
+  transition: transform 0.3s, background 0.3s;
+}
+.music-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255,255,255,0.06);
+}
+
+.card-cover {
+  position: relative;
+  height: 140px;
+  background: linear-gradient(135deg, #2e1065 0%, #111827 100%);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.disc-icon { font-size: 3.5rem; }
+.play-overlay {
+  position: absolute; top:0; left:0; width:100%; height:100%;
+  background: rgba(0,0,0,0.6); display: flex; justify-content: center;
+  align-items: center; opacity: 0; transition: opacity 0.2s; text-decoration: none;
+}
+.music-card:hover .play-overlay { opacity: 1; }
+.play-btn { background: #fff; color: #000; padding: 8px 16px; border-radius: 20px; font-weight: bold; }
+
+.card-body h4 { margin: 15px 0 5px 0; font-size: 1.1rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.card-body p { margin: 0; color: #aaa; font-size: 0.9rem; }
+
+.card-footer {
+  display: flex; justify-content: space-between; align-items: center; margin-top: 15px;
+  padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.05);
+}
+.link-yt { color: #a855f7; text-decoration: none; font-size: 0.85rem; }
+.link-yt:hover { text-decoration: underline; }
+
+.btn-delete {
+  background: transparent; border: none; font-size: 1.1rem; cursor: pointer;
+  padding: 5px; border-radius: 4px; transition: background 0.2s;
+}
+.btn-delete:hover { background: rgba(255, 76, 76, 0.2); }
+
+.empty-card { text-align: center; padding: 60px; color: #666; background: rgba(255,255,255,0.01); border-radius: 12px; border: 1px dashed rgba(255,255,255,0.1); }

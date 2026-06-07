@@ -1,0 +1,47 @@
+<div class="login-container">
+  <div class="background-glow"></div>
+  <div class="login-card">
+    <div class="brand">
+      <div class="logo-icon">🎵</div>
+      <h2>BeatStream</h2>
+      <p>Access your premium music hub</p>
+    </div>
+
+    <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input 
+          type="text" 
+          id="username" 
+          [(ngModel)]="credentials.username" 
+          name="username" 
+          required 
+          placeholder="Enter username..."
+          autocomplete="off">
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input 
+          type="password" 
+          id="password" 
+          [(ngModel)]="credentials.password" 
+          name="password" 
+          required 
+          placeholder="••••••••">
+      </div>
+
+      <div *ngIf="errorMessage" class="error-banner">
+        ⚠️ {{ errorMessage }}
+      </div>
+
+      <button type="submit" [disabled]="!loginForm.valid" class="btn-login">
+        Sign In
+      </button>
+    </form>
+    
+    <div class="hint-box">
+      <small>💡 Quick Test: Use <b>admin/admin123</b> or <b>user/user123</b></small>
+    </div>
+  </div>
+</div>
