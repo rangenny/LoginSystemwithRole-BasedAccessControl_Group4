@@ -1,6 +1,6 @@
 # 🎵 LoginSystemwithRole-BasedAccessControl_Group4
 
-Welcome to Group 4's Music Catalog Application!This project demonstrates a secure Full-Stack web application using **Angular**, **Spring Boot**, and **MySQL**, featuring complete Role-Based Access Control (RBAC).
+Welcome to Group 4's Music Catalog Application! This project demonstrates a secure Full-Stack web application using **Angular**, **Spring Boot**, and **MySQL**, featuring complete Role-Based Access Control (RBAC).
 
 ## 🔐 Test Credentials
 Use the following accounts to test the application's role restrictions:
@@ -13,11 +13,11 @@ Use the following accounts to test the application's role restrictions:
 ---
 
 ## 🚀 Tech Stack
-***Frontend:** Angular, TypeScript, HTML/CSS 
+**Frontend:** Angular, TypeScript, HTML/CSS 
 
-***Backend:** Spring Boot, Java, Spring Security 
+**Backend:** Spring Boot, Java, Spring Security 
 
-***Database:** MySQL 
+**Database:** MySQL 
 
 ## 🛠️ How to Run the Application
 
